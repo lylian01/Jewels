@@ -35,16 +35,14 @@ namespace Jewels.Controllers
 
             return View(models);
         }
-        public ActionResult KhuyenMai()
+        public ActionResult ShowKhuyenMai()
         {
             return View(db.KhuyenMais.ToList());
         }
-        public ActionResult TraCuu(string searchDH = "")
+
+        public ActionResult TraCuu(int searchDH = 0)
         {
-            var donHang = db.DonHangs.Include(d => d.KhuyenMai)
-                                  .Include(d => d.TrangThaiDH)
-                                  .Include(d => d.HinhThucTT)
-                                  .FirstOrDefault(m => m.DonHangID.Equals(searchDH));
+            DonHang donHang = db.DonHangs.Include(a => a.TrangThaiDH).Include(a => a.HinhThucTT).Include(a => a.KhuyenMai).FirstOrDefault(m => m.DonHangID.Equals(searchDH));
             
             return View(donHang);
         }

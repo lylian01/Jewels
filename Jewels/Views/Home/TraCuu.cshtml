@@ -10,8 +10,11 @@
     <h3>Tra cứu đơn hàng</h3>
     <br />
     <div>
-        @using (Html.BeginForm("TraCuu", "Home", FormMethod.Get))
+        @using (Html.BeginForm("TraCuu","Home",FormMethod.Get))
         {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group row" style="display: flex; justify-content: flex-end;">
                 <input id="searchDH" name="searchDH" type="text" value="" placeholder="Nhập mã đơn hàng" style="width:500px; border-radius:9px;">
                 <input type="submit" class="btn mx-2 col-sm-2" style="background-color: var(--bg5-color); color:white;" value="Tìm đơn">

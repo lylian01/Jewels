@@ -376,7 +376,7 @@
     <Content Include="Views\ShoppingCart\Done.cshtml" />
     <Content Include="Views\ShoppingCart\Payment.cshtml" />
     <Content Include="Views\ShoppingCart\BagCart.cshtml" />
-    <Content Include="Views\Home\KhuyenMai.cshtml" />
+    <Content Include="Views\Home\ShowKhuyenMai.cshtml" />
     <Content Include="Views\User\Profile.cshtml" />
     <Content Include="Views\PhanHoiKHs\ThongKe.cshtml" />
     <Content Include="Views\DonHangs\DaHuy.cshtml" />

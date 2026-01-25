@@ -1,5 +1,8 @@
  Web bán trang sức có các chức năng cơ bản và nâng cao cần có của một web thương mại điện tử, tổ chức code theo mô hình MVC
 
+Link demo client : https://youtu.be/gM2XKTRkVWE
+Link demo admin : https://youtu.be/XeTSEWnphgE
+
 Page Main 
 ![image](https://user-images.githubusercontent.com/100463478/228277753-835b8893-7126-4ed5-aa0e-e8c34e5d9e7b.png)
 
